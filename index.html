@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Моя Страница</title>
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            background: url('73ce01e47001c22840860b57fdf07bdd.gif') no-repeat center center fixed; 
+            background-size: cover;
+            color: white;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+        .avatar {
+            width: 150px; /* Размер аватара */
+            height: 150px; /* Размер аватара */
+            border-radius: 50%;
+            border: 5px solid white; /* Граница вокруг аватара */
+            margin-bottom: 20px;
+        }
+
+        .bio {
+            font-size: 18px; /* Размер текста био */
+            max-width: 300px; /* Ширина блока с текстом */
+        }
+
+        .play-button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            background-color: white;
+            color: black;
+            border: none;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <audio id="background-music" loop>
+        <source src="2_5289763094204020942.m4a" type="audio/mpeg">
+        Ваш браузер не поддерживает аудио.
+    </audio>
+
+    <img src="1756246546725.jpg" alt="Аватарка" class="avatar">
+    <div class="bio">
+        <h2>🌑</h2>
+        <p>привет, расслабься и включи музыку мой дорогой друг
+
+(⊙ヮ⊙)</p>
+    </div>
+    
+    <button class="play-button" onclick="playMusic()">Music</button>
+
+    <script>
+        function playMusic() {
+            var music = document.getElementById("background-music");
+            music.play();
+        }
+    </script>
+</body>
+</html>
